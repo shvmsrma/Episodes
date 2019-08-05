@@ -94,7 +94,6 @@ app.delete('/dishes/:dishId', (req, res, next) => {
         res.end('<html><body><h1>Error 404: ' + fileUrl + 
                 ' not a HTML file</h1></body></html>');
       }
-    }
     else {
         res.statusCode = 404;
         res.setHeader('Content-Type', 'text/html');
@@ -102,6 +101,6 @@ app.delete('/dishes/:dishId', (req, res, next) => {
                 ' not supported</h1></body></html>');
     }
   }) */
-server.listen(port, hostname, () => {
+server.listen(process.env.PORT||3000, hostname, () => {
   console.log(`Server running at http://${hostname}:${port}/`);
 });
