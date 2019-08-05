@@ -101,6 +101,4 @@ app.delete('/dishes/:dishId', (req, res, next) => {
                 ' not supported</h1></body></html>');
     }
   }) */
-server.listen(process.env.PORT||3000, hostname, () => {
-  console.log(`Server running at http://${hostname}:${port}/`);
-});
+server.listen(process.env.PORT||3000);
