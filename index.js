@@ -21,6 +21,7 @@ app.use('/headlinesindia',headlinesindiaRouter);
 app.use('/sportsindia',sportsindiaRouter);
 app.use('/sportsus',sportsusRouter);
 app.use('/technologyus',technologyusRouter);
+app.use('/technologyindia',technologyindiaRouter);
 
 
 
